@@ -1,0 +1,181 @@
+{
+  "fileName": "Simple Design System (Community)",
+  "textStyles": [
+    {
+      "name": "Title Hero",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 72,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -3
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Title Page",
+      "fontFamily": "Inter",
+      "fontWeight": "Bold",
+      "fontSize": 48,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Subtitle",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 32,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Heading",
+      "fontFamily": "Inter",
+      "fontWeight": "Semi Bold",
+      "fontSize": 24,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": -2
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Subheading",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 20,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Base",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Strong",
+      "fontFamily": "Inter",
+      "fontWeight": "Semi Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Emphasis",
+      "fontFamily": "Inter",
+      "fontWeight": "Italic",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Link",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Small",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Small Strong",
+      "fontFamily": "Inter",
+      "fontWeight": "Semi Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Body Code",
+      "fontFamily": "Roboto Mono",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Single Line/Body Base",
+      "fontFamily": "Inter",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": "Single Line/Body Small Strong",
+      "fontFamily": "Inter",
+      "fontWeight": "Semi Bold",
+      "fontSize": 14,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": ".Utilities/Component notes/Regular",
+      "fontFamily": "Roboto Mono",
+      "fontWeight": "Regular",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    },
+    {
+      "name": ".Utilities/Component notes/Bold",
+      "fontFamily": "Roboto Mono",
+      "fontWeight": "Bold",
+      "fontSize": 16,
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "textCase": "ORIGINAL"
+    }
+  ]
+}
