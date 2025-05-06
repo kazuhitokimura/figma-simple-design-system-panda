@@ -249,6 +249,11 @@ export default defineConfig({
             disabled: { value: { base: '{colors.gray.300}', _dark: '{colors.gray.700}' } },
           },
         }
+      },
+      breakpoints: {
+        mobile: '375px',
+        tablet: '768px',
+        desktop: '1200px'
       }
     }
   },

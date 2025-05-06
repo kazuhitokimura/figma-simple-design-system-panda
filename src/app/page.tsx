@@ -8,6 +8,7 @@ export default function Home() {
         fontWeight: "bold",
         color: "text.tertiary",
         margin: "400",
+        desktop: { fontSize: "4xl" },
       })}
     >
       Hello 🐼!
