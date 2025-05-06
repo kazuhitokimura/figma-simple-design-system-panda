@@ -8,6 +8,7 @@ export default function Home() {
         color: "text.tertiary",
         margin: "400",
         desktop: { textStyle: "titleHero" },
+        boxShadow: "drop-shadow-400",
       })}
     >
       Hello 🐼!

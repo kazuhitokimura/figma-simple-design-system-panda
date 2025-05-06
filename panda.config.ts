@@ -171,7 +171,9 @@ export default defineConfig({
           'focus-ring': { value: '2px' }
         },
         blurs: {
-          100: { value: '4px' }
+          100: { value: '4px' },
+          'layer': { value: '2px' },
+          'background': { value: '2px' }
         },
         zIndex: {
           0: { value: '0' },
@@ -187,6 +189,20 @@ export default defineConfig({
           'negative-400': { value: '-16' },
           'negative-800': { value: '-32' },
           'negative-1200': { value: '-48' }
+        },
+        shadows: {
+          'drop-shadow-100': { value: '0px 1px 4px 0px rgba(12,12,13,0.05)' },
+          'drop-shadow-200': { value: '0px 1px 4px 0px rgba(12,12,13,0.05), 0px 1px 4px 0px rgba(12,12,13,0.10)' },
+          'drop-shadow-300': { value: '0px 4px 4px -1px rgba(12,12,13,0.05), 0px 4px 4px -1px rgba(12,12,13,0.10)' },
+          'drop-shadow-400': { value: '0px 4px 4px -4px rgba(12,12,13,0.05), 0px 16px 32px -4px rgba(12,12,13,0.10)' },
+          'drop-shadow-500': { value: '0px 4px 4px -4px rgba(12,12,13,0.05), 0px 16px 16px -8px rgba(12,12,13,0.10)' },
+          'drop-shadow-600': { value: '0px 16px 32px -8px rgba(12,12,13,0.40)' },
+          'inner-shadow-100': { value: '0px 1px 4px 0px rgba(12,12,13,0.05) inset' },
+          'inner-shadow-200': { value: '0px 1px 4px 0px rgba(12,12,13,0.05) inset' },
+          'inner-shadow-300': { value: '0px 4px 4px -1px rgba(12,12,13,0.05) inset' },
+          'inner-shadow-400': { value: '0px 16px 32px -4px rgba(12,12,13,0.10) inset' },
+          'inner-shadow-500': { value: '0px 16px 16px -8px rgba(12,12,13,0.10) inset' },
+          'inner-shadow-600': { value: '0px 16px 32px -8px rgba(12,12,13,0.40) inset' }
         },
         fonts: {
           sans: { value: 'Inter' },
@@ -215,7 +231,7 @@ export default defineConfig({
           scale08: { value: '48px' },
           scale09: { value: '64px' },
           scale10: { value: '72px' }
-        }
+        },
       },
       semanticTokens: {
         colors: {
