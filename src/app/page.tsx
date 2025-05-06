@@ -4,11 +4,11 @@ export default function Home() {
   return (
     <div
       className={css({
-        fontSize: "2xl",
+        fontSize: "scale06",
         fontWeight: "bold",
         color: "text.tertiary",
         margin: "400",
-        desktop: { fontSize: "4xl" },
+        desktop: { fontSize: "scale08" },
       })}
     >
       Hello 🐼!

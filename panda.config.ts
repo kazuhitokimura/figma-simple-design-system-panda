@@ -185,6 +185,34 @@ export default defineConfig({
           'negative-400': { value: '-16' },
           'negative-800': { value: '-32' },
           'negative-1200': { value: '-48' }
+        },
+        fonts: {
+          sans: { value: 'Inter' },
+          serif: { value: 'Noto Serif' },
+          mono: { value: 'Roboto Mono' }
+        },
+        fontWeights: {
+          thin: { value: '100' },
+          extraLight: { value: '200' },
+          light: { value: '300' },
+          regular: { value: '400' },
+          medium: { value: '500' },
+          semibold: { value: '600' },
+          bold: { value: '700' },
+          extraBold: { value: '800' },
+          black: { value: '900' }
+        },
+        fontSizes: {
+          scale01: { value: '12px' },
+          scale02: { value: '14px' },
+          scale03: { value: '16px' },
+          scale04: { value: '20px' },
+          scale05: { value: '24px' },
+          scale06: { value: '32px' },
+          scale07: { value: '40px' },
+          scale08: { value: '48px' },
+          scale09: { value: '64px' },
+          scale10: { value: '72px' }
         }
       },
       semanticTokens: {
