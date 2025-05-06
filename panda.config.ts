@@ -123,6 +123,68 @@ export default defineConfig({
             900: { value: '#1e1e1e' },
             1000: { value: '#111111' }
           }
+        },
+        spacing: {
+          0: { value: '0px' },
+          50: { value: '2px' },
+          100: { value: '4px' },
+          150: { value: '6px' },
+          200: { value: '8px' },
+          300: { value: '12px' },
+          400: { value: '16px' },
+          600: { value: '24px' },
+          800: { value: '32px' },
+          1200: { value: '48px' },
+          1600: { value: '64px' },
+          2400: { value: '96px' },
+          4000: { value: '160px' },
+          'negative-50': { value: '-2px' },
+          'negative-100': { value: '-4px' },
+          'negative-150': { value: '-6px' },
+          'negative-200': { value: '-8px' },
+          'negative-300': { value: '-12px' },
+          'negative-400': { value: '-16px' },
+          'negative-600': { value: '-24px' },
+          'negative-800': { value: '-32px' },
+          'negative-1200': { value: '-48px' },
+          'negative-1600': { value: '-64px' },
+          'negative-2400': { value: '-96px' },
+          'negative-4000': { value: '-160px' }
+        },
+        sizes: {
+          icon: {
+            small: { value: '24px' },
+            medium: { value: '32px' },
+            large: { value: '40px' }
+          }
+        },
+        radii: {
+          100: { value: '4px' },
+          200: { value: '8px' },
+          400: { value: '16px' },
+          full: { value: '9999px' }
+        },
+        borderWidths: {
+          border: { value: '1px' },
+          'focus-ring': { value: '2px' }
+        },
+        blurs: {
+          100: { value: '4px' }
+        },
+        zIndex: {
+          0: { value: '0' },
+          25: { value: '1' },
+          100: { value: '4' },
+          200: { value: '8' },
+          400: { value: '16' },
+          800: { value: '32' },
+          1200: { value: '48' },
+          'negative-25': { value: '-1' },
+          'negative-100': { value: '-4' },
+          'negative-200': { value: '-8' },
+          'negative-400': { value: '-16' },
+          'negative-800': { value: '-32' },
+          'negative-1200': { value: '-48' }
         }
       },
       semanticTokens: {
