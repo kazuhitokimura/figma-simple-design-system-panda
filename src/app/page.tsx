@@ -6,7 +6,7 @@ export default function Home() {
       className={css({
         fontSize: "2xl",
         fontWeight: "bold",
-        color: "yellow.800",
+        color: "text.tertiary",
       })}
     >
       Hello 🐼!

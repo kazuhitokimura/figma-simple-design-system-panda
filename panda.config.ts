@@ -124,6 +124,69 @@ export default defineConfig({
             1000: { value: '#111111' }
           }
         }
+      },
+      semanticTokens: {
+        colors: {
+          // Background
+          background: {
+            default: { value: { base: '{colors.slate.100}', _dark: '{colors.slate.1000}' } },
+            secondary: { value: { base: '{colors.slate.200}', _dark: '{colors.slate.900}' } },
+            tertiary: { value: { base: '{colors.slate.300}', _dark: '{colors.slate.800}' } },
+            brand: {
+              default: { value: { base: '{colors.brand.100}', _dark: '{colors.brand.1000}' } },
+              secondary: { value: { base: '{colors.brand.200}', _dark: '{colors.brand.900}' } },
+              tertiary: { value: { base: '{colors.brand.300}', _dark: '{colors.brand.800}' } },
+            },
+            positive: {
+              default: { value: { base: '{colors.green.100}', _dark: '{colors.green.1000}' } },
+              secondary: { value: { base: '{colors.green.200}', _dark: '{colors.green.900}' } },
+              tertiary: { value: { base: '{colors.green.300}', _dark: '{colors.green.800}' } },
+            },
+            warning: {
+              default: { value: { base: '{colors.yellow.100}', _dark: '{colors.yellow.1000}' } },
+              secondary: { value: { base: '{colors.yellow.200}', _dark: '{colors.yellow.900}' } },
+              tertiary: { value: { base: '{colors.yellow.300}', _dark: '{colors.yellow.800}' } },
+            },
+            danger: {
+              default: { value: { base: '{colors.red.100}', _dark: '{colors.red.1000}' } },
+              secondary: { value: { base: '{colors.red.200}', _dark: '{colors.red.900}' } },
+              tertiary: { value: { base: '{colors.red.300}', _dark: '{colors.red.800}' } },
+            },
+            disabled: { value: { base: '{colors.gray.100}', _dark: '{colors.gray.1000}' } },
+          },
+          // Text
+          text: {
+            default: { value: { base: '{colors.black.1000}', _dark: '{colors.white.1000}' } },
+            secondary: { value: { base: '{colors.black.600}', _dark: '{colors.white.600}' } },
+            tertiary: { value: { base: '{colors.black.400}', _dark: '{colors.white.400}' } },
+            brand: { value: { base: '{colors.brand.1000}', _dark: '{colors.brand.100}' } },
+            positive: { value: { base: '{colors.green.1000}', _dark: '{colors.green.100}' } },
+            warning: { value: { base: '{colors.yellow.1000}', _dark: '{colors.yellow.100}' } },
+            danger: { value: { base: '{colors.red.1000}', _dark: '{colors.red.100}' } },
+            disabled: { value: { base: '{colors.gray.400}', _dark: '{colors.gray.600}' } },
+          },
+          // Icon
+          icon: {
+            default: { value: { base: '{colors.black.1000}', _dark: '{colors.white.1000}' } },
+            secondary: { value: { base: '{colors.black.600}', _dark: '{colors.white.600}' } },
+            tertiary: { value: { base: '{colors.black.400}', _dark: '{colors.white.400}' } },
+            brand: { value: { base: '{colors.brand.1000}', _dark: '{colors.brand.100}' } },
+            positive: { value: { base: '{colors.green.1000}', _dark: '{colors.green.100}' } },
+            warning: { value: { base: '{colors.yellow.1000}', _dark: '{colors.yellow.100}' } },
+            danger: { value: { base: '{colors.red.1000}', _dark: '{colors.red.100}' } },
+            disabled: { value: { base: '{colors.gray.400}', _dark: '{colors.gray.600}' } },
+          },
+          // Border
+          border: {
+            default: { value: { base: '{colors.black.200}', _dark: '{colors.white.200}' } },
+            secondary: { value: { base: '{colors.black.100}', _dark: '{colors.white.100}' } },
+            brand: { value: { base: '{colors.brand.600}', _dark: '{colors.brand.400}' } },
+            positive: { value: { base: '{colors.green.600}', _dark: '{colors.green.400}' } },
+            warning: { value: { base: '{colors.yellow.600}', _dark: '{colors.yellow.400}' } },
+            danger: { value: { base: '{colors.red.600}', _dark: '{colors.red.400}' } },
+            disabled: { value: { base: '{colors.gray.300}', _dark: '{colors.gray.700}' } },
+          },
+        }
       }
     }
   },
