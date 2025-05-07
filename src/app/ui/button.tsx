@@ -20,11 +20,12 @@ const button = cva({
       medium: {
         px: "400", // 16px
         py: "300", // 12px
+        textStyle: "singleLine.body.base",
       },
       small: {
         px: "300", // 12px
         py: "200", // 8px
-        fontSize: "scale02", // 14px
+        textStyle: "singleLine.body.small.strong",
       },
     },
     variant: {
@@ -46,11 +47,11 @@ const button = cva({
       neutral: {
         borderWidth: "border",
         borderStyle: "solid",
-        bg: "background.default",
+        bg: "background.neutral.tertiary",
         color: "text.default",
-        borderColor: "border.default",
+        borderColor: "border.neutral.secondary",
         _hover: {
-          bg: "background.secondary",
+          bg: "background.neutral.tertiaryHover",
         },
         _disabled: {
           bg: "background.disabled",
@@ -62,10 +63,10 @@ const button = cva({
         bg: "transparent",
         color: "text.default",
         borderWidth: "border",
-        borderStyle: "none",
-        borderColor: "border.default",
+        borderStyle: "solid",
+        borderColor: "transparent",
         _hover: {
-          color: "text.default",
+          bg: "transparent",
           borderWidth: "border",
           borderStyle: "solid",
           borderColor: "border.default",
