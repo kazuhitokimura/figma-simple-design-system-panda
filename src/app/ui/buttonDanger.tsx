@@ -18,13 +18,11 @@ const buttonDanger = cva({
   variants: {
     size: {
       medium: {
-        px: "400",
-        py: "300",
+        padding: "300",
         textStyle: "singleLine.body.base",
       },
       small: {
-        px: "300",
-        py: "200",
+        padding: "200",
         textStyle: "singleLine.body.small.strong",
       },
     },

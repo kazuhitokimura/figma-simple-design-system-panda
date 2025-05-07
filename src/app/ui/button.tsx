@@ -18,13 +18,11 @@ const button = cva({
   variants: {
     size: {
       medium: {
-        px: "400", // 16px
-        py: "300", // 12px
+        padding: "300", // 12px
         textStyle: "singleLine.body.base",
       },
       small: {
-        px: "300", // 12px
-        py: "200", // 8px
+        padding: "200", // 8px
         textStyle: "singleLine.body.small.strong",
       },
     },

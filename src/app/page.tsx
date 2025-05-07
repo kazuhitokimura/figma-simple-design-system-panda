@@ -1,6 +1,6 @@
 import { css } from "../../styled-system/css";
 import { Button } from "./ui/button";
-
+import { ButtonDanger } from "./ui/buttonDanger";
 export default function Home() {
   return (
     <div>
@@ -15,14 +15,15 @@ export default function Home() {
         Hello 🐼
       </div>
       <Button variant="primary" size="medium">
-        Click me
+        Button
       </Button>
       <Button variant="neutral" size="medium">
-        Click me
+        Button
       </Button>
       <Button variant="subtle" size="medium">
-        Click me
+        Button
       </Button>
+      <ButtonDanger size="medium">Button</ButtonDanger>
     </div>
   );
 }
