@@ -16,7 +16,6 @@ export default function Home() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          paddingX: "1200",
           paddingY: "1600", // 96px 64px
         })}
       >
@@ -26,24 +25,39 @@ export default function Home() {
             flexDirection: "column",
             alignItems: "center",
             maxWidth: "768px",
-            paddingX: "600",
+            paddingX: "200",
             gap: "200", // 8px
+            tablet: {
+              paddingX: "600",
+            },
           })}
         >
           <h1
             className={css({
-              textStyle: "titleHero",
+              textStyle: "subtitle",
               color: "text.default",
               textAlign: "center",
+              tablet: {
+                textStyle: "titleHero",
+              },
+              mobile: {
+                textStyle: "titlePage",
+              },
             })}
           >
             Figma→Cursor Prototypes
           </h1>
           <span
             className={css({
-              textStyle: "subtitle",
+              textStyle: "subHeading",
               color: "text.secondary",
               textAlign: "center",
+              tablet: {
+                textStyle: "subtitle",
+              },
+              mobile: {
+                textStyle: "subtitle",
+              },
             })}
           >
             FigmaとCursorで作ったプロトタイプ集
