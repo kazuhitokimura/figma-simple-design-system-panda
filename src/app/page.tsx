@@ -1,6 +1,7 @@
 import { css } from "../../styled-system/css";
 import { Button } from "./ui/button";
 import { ButtonDanger } from "./ui/buttonDanger";
+import { Icon } from "./ui/icon";
 export default function Home() {
   return (
     <div>
@@ -24,6 +25,7 @@ export default function Home() {
         Button
       </Button>
       <ButtonDanger size="medium">Button</ButtonDanger>
+      <Icon name="airplay" size="48" />
     </div>
   );
 }
