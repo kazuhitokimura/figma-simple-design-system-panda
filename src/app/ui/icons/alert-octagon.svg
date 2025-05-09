@@ -1,0 +1,26 @@
+<svg width="415" height="88" viewBox="0 0 415 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="414" height="87" rx="4.5" stroke="#2C2C2C" stroke-dasharray="10 5"/>
+<path d="M44 36V44M44 52H44.02M35.72 24H52.28L64 35.72V52.28L52.28 64H35.72L24 52.28V35.72L35.72 24Z" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g clip-path="url(#clip0_4039_13021)">
+<path d="M115 25.3333V27.9999M115 30.6666H115.007M112.24 21.3333H117.76L121.667 25.2399V30.7599L117.76 34.6666H112.24L108.333 30.7599V25.2399L112.24 21.3333Z" stroke="#1E1E1E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip1_4039_13021)">
+<path d="M172 26.6667V30.0001M172 33.3334H172.008M168.55 21.6667H175.45L180.333 26.5501V33.4501L175.45 38.3334H168.55L163.667 33.4501V26.5501L168.55 21.6667Z" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#clip2_4039_13021)">
+<path d="M233 28V32M233 36H233.01M228.86 22H237.14L243 27.86V36.14L237.14 42H228.86L223 36.14V27.86L228.86 22Z" stroke="#1E1E1E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M300 30.6667V36.0001M300 41.3334H300.013M294.48 22.6667H305.52L313.333 30.4801V41.5201L305.52 49.3334H294.48L286.667 41.5201V30.4801L294.48 22.6667Z" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M375 33.3333V39.9999M375 46.6666H375.017M368.1 23.3333H381.9L391.667 33.0999V46.8999L381.9 56.6666H368.1L358.333 46.8999V33.0999L368.1 23.3333Z" stroke="#1E1E1E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<clipPath id="clip0_4039_13021">
+<rect width="16" height="16" fill="white" transform="translate(107 20)"/>
+</clipPath>
+<clipPath id="clip1_4039_13021">
+<rect width="20" height="20" fill="white" transform="translate(162 20)"/>
+</clipPath>
+<clipPath id="clip2_4039_13021">
+<rect width="24" height="24" fill="white" transform="translate(221 20)"/>
+</clipPath>
+</defs>
+</svg>
