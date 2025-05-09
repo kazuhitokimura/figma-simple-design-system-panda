@@ -6,8 +6,8 @@ export const textStyles = defineTextStyles({
     value: {
       fontFamily: 'Inter',
       fontSize: '72px',
-      fontWeight: '700',
-      letterSpacing: '-3%',
+      fontWeight: 'bold',
+      letterSpacing: '-0.03em',
       lineHeight: '1.2'
     }
   },
@@ -17,7 +17,7 @@ export const textStyles = defineTextStyles({
       fontFamily: 'Inter',
       fontSize: '48px',
       fontWeight: '700',
-      letterSpacing: '-2%',
+      letterSpacing: '-0.02em',
       lineHeight: '1.2'
     }
   },
@@ -37,7 +37,7 @@ export const textStyles = defineTextStyles({
       fontFamily: 'Inter',
       fontSize: '24px',
       fontWeight: '600',
-      letterSpacing: '-2%',
+      letterSpacing: '-0.02em',
       lineHeight: '1.2'
     }
   },

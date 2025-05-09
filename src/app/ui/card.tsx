@@ -27,7 +27,7 @@ export const Card = ({
         flexDirection: "row",
         alignItems: "flex-start",
         gap: "600", // 24px
-        width: "440px",
+        width: "100%",
         bg: "background.default", // fill_5DPI2B: #FFFFFF → semantic token
         borderRadius: "200", // 8px
         borderWidth: "border", // panda.config.ts Token
