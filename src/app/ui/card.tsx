@@ -1,3 +1,5 @@
+"use client";
+
 import { css } from "../../../styled-system/css";
 import { Icon } from "./icon";
 import type { IconName } from "./icon";
@@ -10,6 +12,7 @@ export type CardProps = {
   buttonLabel?: string;
   buttonSize?: "medium" | "small";
   buttonVariant?: "primary" | "neutral" | "subtle";
+  onButtonClick?: () => void; // ← これを追加
 };
 
 export const Card = ({
@@ -19,6 +22,7 @@ export const Card = ({
   buttonLabel,
   buttonSize = "medium",
   buttonVariant = "primary",
+  onButtonClick,
 }: CardProps) => {
   return (
     <div
@@ -71,7 +75,11 @@ export const Card = ({
               alignSelf: "stretch",
             })}
           >
-            <Button variant={buttonVariant} size={buttonSize}>
+            <Button
+              variant={buttonVariant}
+              size={buttonSize}
+              onClick={onButtonClick}
+            >
               {buttonLabel}
             </Button>
           </div>

@@ -1,3 +1,4 @@
+"use client";
 import { cva } from "../../../styled-system/css";
 
 const buttonDanger = cva({

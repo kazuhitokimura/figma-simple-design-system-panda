@@ -1,6 +1,5 @@
 import { css } from "../../styled-system/css";
-import { Card } from "./ui/card";
-
+import { PrototypeCardList } from "./ui/top/prototypeCardList";
 export default function Home() {
   return (
     <div
@@ -96,25 +95,7 @@ export default function Home() {
           >
             作ったプロトタイプの一覧
           </h2>
-          <div
-            className={css({
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))",
-              gap: "600", // 48px
-              alignSelf: "stretch",
-            })}
-          >
-            {[...Array(5)].map((_, i) => (
-              <Card
-                key={i}
-                title="Title"
-                body="Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story."
-                buttonLabel="Button"
-                buttonSize="medium"
-                buttonVariant="neutral"
-              />
-            ))}
-          </div>
+          <PrototypeCardList />
         </div>
       </section>
 
