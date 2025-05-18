@@ -1,8 +1,32 @@
 "use client";
 import { css } from "../../../../styled-system/css";
 import { Card } from "../card";
+import { useRouter } from "next/navigation";
 
 export const PrototypeCardList = () => {
+  const router = useRouter();
+
+  const cardData = [
+    {
+      title: "コンポーネントの一覧",
+      body: "MCP経由で取得したFigmaデータをもとに作成したコンポーネントの一覧です",
+      buttonLabel: "見る",
+      onButtonClick: () => router.push("/prototype/component-list"),
+    },
+    {
+      title: "Title 2",
+      body: "Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.",
+      buttonLabel: "Button",
+      onButtonClick: () => alert("Card 1 clicked!"),
+    },
+    {
+      title: "Title 3",
+      body: "Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.",
+      buttonLabel: "Button",
+      onButtonClick: () => alert("Card 1 clicked!"),
+    },
+  ];
+
   return (
     <div
       className={css({
@@ -12,17 +36,15 @@ export const PrototypeCardList = () => {
         alignSelf: "stretch",
       })}
     >
-      {[...Array(5)].map((_, i) => (
+      {cardData.map((card, i) => (
         <Card
           key={i}
-          title={`Title ${i + 1}`}
-          body="Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story."
-          buttonLabel="Button"
+          title={card.title}
+          body={card.body}
+          buttonLabel={card.buttonLabel}
           buttonSize="medium"
           buttonVariant="neutral"
-          onButtonClick={() => {
-            alert(`Card ${i + 1} clicked!`);
-          }}
+          onButtonClick={card.onButtonClick}
         />
       ))}
     </div>

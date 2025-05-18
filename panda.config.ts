@@ -326,7 +326,9 @@ export default defineConfig({
               onDangerSecondary: { value: { base: '{colors.red.700}', _dark: '{colors.red.100}' } },
               onDangerTertiary: { value: { base: '{colors.red.700}', _dark: '{colors.red.100}' } },
             },
-            disabled: { value: { base: '{colors.brand.400}', _dark: '{colors.brand.500}' } },
+            disabled: {
+              default: { value: { base: '{colors.brand.400}', _dark: '{colors.brand.500}' } }, 
+              onDisabled: { value: { base: '{colors.brand.400}', _dark: '{colors.brand.900}' } } },
             neutral: {
               default: { value: { base: '{colors.slate.900}', _dark: '{colors.slate.200}' } },
               secondary: { value: { base: '{colors.slate.700}', _dark: '{colors.slate.300}' } },

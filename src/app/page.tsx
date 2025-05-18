@@ -1,5 +1,6 @@
 import { css } from "../../styled-system/css";
 import { PrototypeCardList } from "./ui/top/prototypeCardList";
+
 export default function Home() {
   return (
     <div
@@ -86,15 +87,6 @@ export default function Home() {
             gap: "800", // 48px
           })}
         >
-          <h2
-            className={css({
-              textStyle: "heading",
-              color: "text.default",
-              width: "100%",
-            })}
-          >
-            作ったプロトタイプの一覧
-          </h2>
           <PrototypeCardList />
         </div>
       </section>
@@ -132,7 +124,7 @@ export default function Home() {
               whiteSpace: "pre-line",
             })}
           >
-            {`Figma CommunityからFigma Symple Design SystemをDublicate\nNext.js・PandaCSSの開発環境を構築\nFigma APIキーを環境変数に設定\nCursorからframelinkのMCP サーバー経由でデザインデータを取得\nPandaCSSにTokensを登録\nComponentを作成\nPageを作成\nGitHubに公開\nVercelでホスティング`}
+            {`Figma CommunityからFigma Symple Design SystemをDublicate\nNext.js・PandaCSSの開発環境を構築\nFigma APIキーを環境変数に設定\nCursorからframelinkのMCP サーバー経由でデザインデータを取得\nPandaCSSにTokensを登録\nComponentを作成\nPageを作成`}
           </div>
         </div>
       </section>
