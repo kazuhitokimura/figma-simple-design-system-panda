@@ -24,7 +24,7 @@ const button = cva({
       },
       small: {
         padding: "200", // 8px
-        textStyle: "singleLine.body.small.strong",
+        textStyle: "singleLine.body.base",
       },
     },
     variant: {
@@ -39,8 +39,13 @@ const button = cva({
         },
         _disabled: {
           bg: "background.disabled",
-          color: "text.disabled",
+          color: "text.disabled.default",
           borderColor: "border.disabled",
+          _hover: {
+            bg: "background.disabled",
+            color: "text.disabled.default",
+            borderColor: "border.disabled",
+          },
         },
       },
       neutral: {
@@ -54,8 +59,13 @@ const button = cva({
         },
         _disabled: {
           bg: "background.disabled",
-          color: "text.disabled",
+          color: "text.disabled.default",
           borderColor: "border.disabled",
+          _hover: {
+            bg: "background.disabled",
+            color: "text.disabled.default",
+            borderColor: "border.disabled",
+          },
         },
       },
       subtle: {
@@ -71,7 +81,13 @@ const button = cva({
           borderColor: "border.default",
         },
         _disabled: {
-          color: "text.disabled",
+          color: "text.disabled.default",
+          _hover: {
+            bg: "transparent",
+            borderWidth: "border",
+            borderStyle: "solid",
+            borderColor: "transparent",
+          },
         },
       },
     },

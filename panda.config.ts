@@ -155,9 +155,12 @@ export default defineConfig({
         },
         sizes: {
           icon: {
-            small: { value: '24px' },
-            medium: { value: '32px' },
-            large: { value: '40px' }
+            16: { value: '16px' },
+            20: { value: '20px' },
+            24: { value: '24px' },
+            32: { value: '32px' },
+            40: { value: '40px' },
+            48: { value: '48px' }
           }
         },
         radii: {

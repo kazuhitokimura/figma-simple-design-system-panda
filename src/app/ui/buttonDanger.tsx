@@ -24,7 +24,7 @@ const buttonDanger = cva({
       },
       small: {
         padding: "200",
-        textStyle: "singleLine.body.small.strong",
+        textStyle: "singleLine.body.base",
       },
     },
     variant: {
@@ -40,26 +40,37 @@ const buttonDanger = cva({
         },
         _disabled: {
           bg: "background.disabled",
-          color: "text.disabled",
+          color: "text.disabled.default",
           borderColor: "border.disabled",
+          _hover: {
+            bg: "background.disabled",
+            color: "text.disabled.default",
+            borderColor: "border.disabled",
+          },
         },
       },
       subtle: {
         bg: "transparent",
         color: "text.danger.default",
         borderWidth: "border",
-        borderStyle: "none",
+        borderStyle: "solid",
+        borderColor: "transparent",
         _hover: {
-          bg: "background.danger.subtleHover",
+          bg: "background.danger.tertiaryHover",
           color: "text.danger.default",
           borderWidth: "border",
           borderStyle: "solid",
-          borderColor: "border.danger.hover",
+          borderColor: "border.danger.default",
         },
         _disabled: {
           bg: "background.disabled",
-          color: "text.disabled",
+          color: "text.disabled.default",
           borderColor: "border.disabled",
+          _hover: {
+            bg: "background.disabled",
+            color: "text.disabled.default",
+            borderColor: "border.disabled",
+          },
         },
       },
     },
