@@ -124,7 +124,7 @@ export default function Home() {
               whiteSpace: "pre-line",
             })}
           >
-            {`Figma CommunityからFigma Symple Design SystemをDublicate\nNext.js・PandaCSSの開発環境を構築\nFigma APIキーを環境変数に設定\nCursorからframelinkのMCP サーバー経由でデザインデータを取得\nPandaCSSにTokensを登録\nComponentを作成\nPageを作成`}
+            {`Figma CommunityからFigma Symple Design SystemをDublicate\nNext.js・PandaCSSの開発環境を構築\nFigma APIキーを環境変数に設定\nCursorからframelinkのMCP サーバー経由でデザインデータを取得\nJSONをCursorに読み込ませて、PandaCSSにTokensを登録\nComponentを作成\nPageを作成`}
           </div>
         </div>
       </section>

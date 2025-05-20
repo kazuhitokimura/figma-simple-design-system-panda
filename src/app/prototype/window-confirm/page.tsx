@@ -10,7 +10,7 @@ export default function ComponentList() {
         size="medium"
         variant="primary"
         onClick={() => {
-          window.confirm("コンテンツを削除しますけど大丈夫？");
+          window.confirm("コンテンツを削除するけど大丈夫？");
         }}
       >
         ボタン
