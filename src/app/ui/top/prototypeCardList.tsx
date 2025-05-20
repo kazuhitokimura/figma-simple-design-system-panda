@@ -14,10 +14,10 @@ export const PrototypeCardList = () => {
       onButtonClick: () => router.push("/prototype/component-list"),
     },
     {
-      title: "Title 2",
-      body: "Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.",
-      buttonLabel: "Button",
-      onButtonClick: () => alert("Card 1 clicked!"),
+      title: "Window Confirm",
+      body: "window confirmのデモです",
+      buttonLabel: "見る",
+      onButtonClick: () => router.push("/prototype/window-confirm"),
     },
     {
       title: "Title 3",
