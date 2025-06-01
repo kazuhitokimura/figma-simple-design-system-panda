@@ -5,6 +5,7 @@ import { Button } from "../../ui/button";
 import { ButtonDanger } from "../../ui/buttonDanger";
 import { Card } from "../../ui/card";
 import { Icon } from "../../ui/icon";
+import { Accordion } from "@/app/ui/accordion";
 
 export default function ComponentList() {
   return (
@@ -191,8 +192,8 @@ export default function ComponentList() {
         >
           <Card
             title="タイトル"
-            body="内容"
-            iconName="activity"
+            body="内容が入ります"
+            iconName="chevron-right"
             buttonLabel="ボタン"
             buttonSize="medium"
             buttonVariant="primary"
@@ -221,24 +222,43 @@ export default function ComponentList() {
             gap: "200",
           })}
         >
-          <Icon name="activity" size="16" />
-          <Icon name="activity" size="20" />
-          <Icon name="activity" size="24" />
-          <Icon name="activity" size="32" />
-          <Icon name="activity" size="40" />
-          <Icon name="activity" size="48" />
-          <Icon name="activity" color="icon.secondary" size="16" />
-          <Icon name="activity" color="icon.secondary" size="20" />
-          <Icon name="activity" color="icon.secondary" size="24" />
-          <Icon name="activity" color="icon.secondary" size="32" />
-          <Icon name="activity" color="icon.secondary" size="40" />
-          <Icon name="activity" color="icon.secondary" size="48" />
-          <Icon name="activity" color="icon.tertiary" size="16" />
-          <Icon name="activity" color="icon.tertiary" size="20" />
-          <Icon name="activity" color="icon.tertiary" size="24" />
-          <Icon name="activity" color="icon.tertiary" size="32" />
-          <Icon name="activity" color="icon.tertiary" size="40" />
-          <Icon name="activity" color="icon.tertiary" size="48" />
+          <Icon name="chevron-left" size="icon.16" />
+          <Icon name="chevron-left" size="icon.20" />
+          <Icon name="chevron-left" size="icon.24" />
+          <Icon name="chevron-left" size="icon.32" />
+          <Icon name="chevron-left" size="icon.48" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.16" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.20" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.24" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.32" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.40" />
+          <Icon name="chevron-left" color="icon.secondary" size="icon.48" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.16" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.20" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.24" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.32" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.40" />
+          <Icon name="chevron-left" color="icon.tertiary" size="icon.48" />
+        </div>
+        <div>
+          <h1
+            className={css({
+              textStyle: "heading",
+              color: "text.default",
+              paddingTop: "800",
+              paddingBottom: "400",
+            })}
+          >
+            Accordion
+          </h1>
+          <Accordion
+            items={[
+              {
+                title: "タイトル",
+                content: "内容",
+              },
+            ]}
+          />
         </div>
       </div>
     </div>

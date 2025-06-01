@@ -40,7 +40,7 @@ export const Card = ({
         p: "400", // 16px padding
       })}
     >
-      {iconName && <Icon name={iconName} size="32" color="icon.default" />}
+      {iconName && <Icon name={iconName} size="icon.32" color="icon.default" />}
       <div
         className={css({
           display: "flex",
