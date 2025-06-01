@@ -6,6 +6,7 @@ import { ButtonDanger } from "../../ui/buttonDanger";
 import { Card } from "../../ui/card";
 import { Icon } from "../../ui/icon";
 import { Accordion } from "@/app/ui/accordion";
+import { FormElementList } from "@/app/ui/component-list/FormElementList";
 
 export default function ComponentList() {
   return (
@@ -259,6 +260,19 @@ export default function ComponentList() {
               },
             ]}
           />
+        </div>
+        <div>
+          <h1
+            className={css({
+              textStyle: "heading",
+              color: "text.default",
+              paddingTop: "800",
+              paddingBottom: "400",
+            })}
+          >
+            Form Element
+          </h1>
+          <FormElementList />
         </div>
       </div>
     </div>

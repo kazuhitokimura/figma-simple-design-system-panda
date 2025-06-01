@@ -5,8 +5,8 @@ export type InputFieldProps = {
   label: string;
   value?: string;
   placeholder?: string;
-  state?: "default" | "error" | "disabled";
-  onChange?: (value: string) => void;
+  state?: "default" | "error" | "disabled"; // 入力フィールドの状態
+  onChange?: (value: string) => void; // 入力値が変更されたときのコールバック
 };
 
 export const InputField = ({
@@ -16,7 +16,9 @@ export const InputField = ({
   state = "default",
   onChange,
 }: InputFieldProps) => {
+  // エラー状態かどうか
   const isError = state === "error";
+  // 無効状態かどうか
   const isDisabled = state === "disabled";
 
   return (
@@ -24,28 +26,30 @@ export const InputField = ({
       className={css({
         display: "flex",
         flexDirection: "column",
-        gap: "200", // 8px
+        gap: "200",
         width: "100%",
       })}
     >
+      {/* ラベル部分 */}
       <label
         className={css({
-          textStyle: "body.base", // Figma: style_FQX02D
-          color: isDisabled ? "text.disabled" : "text.default", // Figma: fill_SU7XQW, fill_731WOB
+          textStyle: "body.base", //
+          color: isDisabled ? "text.disabled" : "text.default",
         })}
       >
         {label}
       </label>
+      {/* 入力欄のラッパー */}
       <div
         className={css({
           display: "flex",
           flexDirection: "row",
           alignItems: "stretch",
           alignSelf: "stretch",
-          paddingX: "400", // 12px (上下) 16px(左右)
-          paddingY: "300",
-          borderRadius: "200", // 8px
-          bg: isDisabled ? "background.disabled" : "background.default", // Figma: fill_ECTZ8U, fill_1U72WY
+          paddingY: "300", // 12px
+          paddingX: "400", // 16px
+          borderRadius: "200",
+          bg: isDisabled ? "background.disabled" : "background.default",
           borderWidth: "border",
           borderStyle: "solid",
           borderColor: isError
@@ -55,25 +59,27 @@ export const InputField = ({
               : "border.default",
         })}
       >
+        {/* 実際のinput要素 */}
         <input
           className={css({
             flex: 1,
             border: "none",
             outline: "none",
             bg: "transparent",
+            height: "1rem", //なぜか19.5pxになってしまうので
+            textStyle: "singleLine.body.base",
             color: isDisabled
               ? "text.disabled"
               : isError
                 ? "text.danger.default"
                 : "text.default",
-            textStyle: "body.base",
             _placeholder: { color: "text.disabled.onDisabled" },
           })}
           type="text"
           value={value}
           placeholder={placeholder}
           disabled={isDisabled}
-          onChange={(e) => onChange?.(e.target.value)}
+          onChange={(e) => onChange?.(e.target.value)} // 入力値が変わったときにコールバックを呼ぶ
         />
       </div>
     </div>
