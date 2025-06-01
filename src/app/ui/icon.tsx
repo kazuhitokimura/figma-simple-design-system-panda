@@ -26,8 +26,8 @@ export const Icon = ({
     case "chevron-left":
       return (
         <svg
-          className={css({ width: size, height: size, color })}
           viewBox="0 0 16 16"
+          className={css({ width: size, height: size, color: color })}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           {...props}
@@ -44,8 +44,8 @@ export const Icon = ({
     case "chevron-right":
       return (
         <svg
-          className={css({ width: size, height: size, color })}
           viewBox="0 0 16 16"
+          className={css({ width: size, height: size, color: color })}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           {...props}
@@ -62,8 +62,8 @@ export const Icon = ({
     case "chevron-up":
       return (
         <svg
-          className={css({ width: size, height: size, color })}
           viewBox="0 0 16 16"
+          className={css({ width: size, height: size, color: color })}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           {...props}
@@ -80,8 +80,8 @@ export const Icon = ({
     case "chevron-down":
       return (
         <svg
-          className={css({ width: size, height: size, color })}
           viewBox="0 0 16 16"
+          className={css({ width: size, height: size, color: color })}
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           {...props}
