@@ -223,18 +223,76 @@ export default function ComponentList() {
             gap: "200",
           })}
         >
-          <Icon name="chevron-left" size="icon.16" />
-          <Icon name="chevron-left" size="icon.20" />
-          <Icon name="chevron-left" size="icon.24" />
-          <Icon name="chevron-left" size="icon.32" />
-          <Icon name="chevron-left" size="icon.48" />
-          <Icon name="chevron-left" color="icon.secondary" size="icon.16" />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.16",
+              height: "icon.16",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.20",
+              height: "icon.20",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.24",
+              height: "icon.24",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.32",
+              height: "icon.32",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.40",
+              height: "icon.40",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.48",
+              height: "icon.48",
+            })}
+          />
+          <Icon
+            name="chevron-left"
+            className={css({
+              width: "icon.16",
+              height: "icon.16",
+              color: "icon.secondary",
+            })}
+          />
           <Icon name="chevron-left" color="icon.secondary" size="icon.20" />
           <Icon name="chevron-left" color="icon.secondary" size="icon.24" />
           <Icon name="chevron-left" color="icon.secondary" size="icon.32" />
           <Icon name="chevron-left" color="icon.secondary" size="icon.40" />
           <Icon name="chevron-left" color="icon.secondary" size="icon.48" />
-          <Icon name="chevron-left" color="icon.tertiary" size="icon.16" />
+          <Icon
+            name="chevron-left"
+            size="icon.16"
+            className={css({
+              width: "icon.16",
+              height: "icon.16",
+              color: "icon.tertiary",
+            })}
+          />
           <Icon name="chevron-left" color="icon.tertiary" size="icon.20" />
           <Icon name="chevron-left" color="icon.tertiary" size="icon.24" />
           <Icon name="chevron-left" color="icon.tertiary" size="icon.32" />
