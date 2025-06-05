@@ -14,10 +14,10 @@ export const PrototypeCardList = () => {
       onButtonClick: () => router.push("/prototype/component-list"),
     },
     {
-      title: "Window Confirmのテスト",
-      body: "window confirmがどこまでカスタマイズできるのかのテストです",
+      title: "Window ConfirmとWindow Alertのテスト",
+      body: "window confirmとwindow alertがどこまでカスタマイズできるのかのテストです",
       buttonLabel: "見る",
-      onButtonClick: () => router.push("/prototype/window-confirm"),
+      onButtonClick: () => router.push("/prototype/window-confirm-and-alert"),
     },
     {
       title: "Title 3",

@@ -13,7 +13,16 @@ export default function ComponentList() {
           window.confirm("コンテンツを削除するけど大丈夫？");
         }}
       >
-        ボタン
+        window.confirm
+      </ButtonDanger>
+      <ButtonDanger
+        size="medium"
+        variant="primary"
+        onClick={() => {
+          window.alert("確認してもらっていいですか？");
+        }}
+      >
+        window.alert
       </ButtonDanger>
     </div>
   );
