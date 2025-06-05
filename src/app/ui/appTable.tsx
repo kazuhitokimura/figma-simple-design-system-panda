@@ -16,6 +16,7 @@ const TableCell = ({
       padding: "300", // 12px
       background: "background.default", // panda token
       borderBottom: "1px solid",
+      borderLeft: "1px solid",
       borderColor: "border.default", // panda token
       textStyle: "body.base", // style_DQ6DZ0
       color: "text.default", // panda token
@@ -43,6 +44,15 @@ const TableCell = ({
 );
 
 export const AppTable = () => {
+  // ヘッダーのモックデータ
+  const headerData = [
+    { value: "Column-1" },
+    { value: "Column-2" },
+    { value: "Column-3" },
+    { value: "Column-4" },
+    { value: "Column-5" },
+  ];
+
   // モックデータ: 5x5のテーブル、isLinkはランダムにtrue/false
   const mockData: { value: string; isLink?: boolean }[][] = [
     [
@@ -98,14 +108,15 @@ export const AppTable = () => {
     >
       <thead>
         <tr>
-          {columnWidths.map((width, i) => (
+          {headerData.map((header, i) => (
             <th
               key={i}
               className={css({
-                width,
+                width: columnWidths[i],
                 padding: "300", // 12px (layout_78CNCA)
                 background: "background.secondary", // panda token
                 borderBottom: "1px solid",
+                borderLeft: "1px solid",
                 borderColor: "border.default", // panda token
                 textStyle: "body.base", // style_DQ6DZ0
                 color: "text.default", // panda token
@@ -116,7 +127,7 @@ export const AppTable = () => {
                 textAlign: "left",
               })}
             >
-              Value
+              {header.value}
             </th>
           ))}
         </tr>
