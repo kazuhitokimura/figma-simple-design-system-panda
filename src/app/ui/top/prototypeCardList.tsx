@@ -20,10 +20,10 @@ export const PrototypeCardList = () => {
       onButtonClick: () => router.push("/prototype/window-confirm-and-alert"),
     },
     {
-      title: "Title 3",
-      body: "Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes, or even a very very short story.",
+      title: "テーブル内のリンクのテスト",
+      body: "テーブル内のリンクがどのように操作できるかのテスト",
       buttonLabel: "Button",
-      onButtonClick: () => alert("Card 1 clicked!"),
+      onButtonClick: () => router.push("/prototype/link-in-table"),
     },
   ];
 
