@@ -7,6 +7,7 @@ import { Card } from "../../ui/card";
 import { Icon } from "../../ui/icon";
 import { Accordion } from "@/app/ui/accordion";
 import { FormElementList } from "@/app/ui/component-list/FormElementList";
+import { IconButton } from "@/app/ui/icoButton";
 
 export default function ComponentList() {
   return (
@@ -331,6 +332,99 @@ export default function ComponentList() {
             Form Element
           </h1>
           <FormElementList />
+        </div>
+        <div>
+          <h1
+            className={css({
+              textStyle: "heading",
+              color: "text.default",
+              paddingTop: "800",
+              paddingBottom: "400",
+            })}
+          >
+            Icon Button
+          </h1>
+          <div
+            className={css({
+              display: "flex",
+              flexDirection: "row",
+              flexWrap: "wrap",
+              gap: "200",
+            })}
+          >
+            <IconButton
+              icon="chevron-left"
+              variant="primary"
+              onClick={() => {
+                alert("click");
+              }}
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="neutral"
+              onClick={() => {
+                alert("click");
+              }}
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="subtle"
+              onClick={() => {
+                alert("click");
+              }}
+            />
+            <IconButton icon="chevron-left" variant="primary" disabled />
+            <IconButton icon="chevron-left" variant="neutral" disabled />
+            <IconButton icon="chevron-left" variant="subtle" disabled />
+            <IconButton
+              icon="chevron-left"
+              variant="primary"
+              onClick={() => {
+                alert("click");
+              }}
+              size="small"
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="neutral"
+              size="small"
+              onClick={() => {
+                alert("click");
+              }}
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="subtle"
+              size="small"
+              onClick={() => {
+                alert("click");
+              }}
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="neutral"
+              size="small"
+              disabled
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="subtle"
+              size="small"
+              disabled
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="neutral"
+              size="small"
+              disabled
+            />
+            <IconButton
+              icon="chevron-left"
+              variant="subtle"
+              size="small"
+              disabled
+            />
+          </div>
         </div>
       </div>
     </div>

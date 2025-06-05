@@ -1,17 +1,16 @@
 "use client";
 import { cva } from "../../../styled-system/css";
+import { Icon, IconName } from "./icon";
 
-const button = cva({
+const iconButton = cva({
   base: {
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    borderRadius: "200", // 8px
-    cursor: "pointer",
-    textStyle: "singleLine.body.base",
-    gap: "200", // 8px
     height: "fit-content",
     width: "fit-content",
+    borderRadius: "1000", // 40px
+    cursor: "pointer",
     transition: "all 0.2s",
     _disabled: {
       cursor: "not-allowed",
@@ -22,11 +21,9 @@ const button = cva({
     size: {
       medium: {
         padding: "300", // 12px
-        textStyle: "singleLine.body.base",
       },
       small: {
         padding: "200", // 8px
-        textStyle: "singleLine.body.base",
       },
     },
     variant: {
@@ -51,11 +48,11 @@ const button = cva({
         },
       },
       neutral: {
+        bg: "transparent",
         borderWidth: "border",
         borderStyle: "solid",
-        bg: "background.neutral.tertiary",
         color: "text.default",
-        borderColor: "border.neutral.secondary",
+        borderColor: "border.default",
         _hover: {
           bg: "background.neutral.tertiaryHover",
         },
@@ -94,22 +91,61 @@ const button = cva({
       },
     },
   },
+  // compound variants
+  compoundVariants: [
+    // primary variant uses brandOnBrand icon color
+    {
+      variant: "primary",
+      css: {
+        "--icon-color": "token(colors.icon.brand.onBrand)",
+      },
+    },
+    // neutral variant uses neutralDefault icon color
+    {
+      variant: "neutral",
+      css: {
+        "--icon-color": "token(colors.icon.neutral.default)",
+      },
+    },
+    // subtle variant uses default icon color
+    {
+      variant: "subtle",
+      css: {
+        "--icon-color": "token(colors.icon.default)",
+      },
+    },
+    // disabled state overrides all variants
+    {
+      variant: ["primary", "neutral", "subtle"],
+      css: {
+        _disabled: {
+          "--icon-color": "token(colors.icon.disabled)",
+        },
+      },
+    },
+  ],
   defaultVariants: {
     size: "medium",
     variant: "primary",
   },
 });
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface IconButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  icon: IconName;
   size?: "medium" | "small";
   variant?: "primary" | "neutral" | "subtle";
-  children: React.ReactNode;
 }
 
-export const Button = ({ size, variant, children, ...props }: ButtonProps) => {
+export const IconButton = ({
+  size,
+  variant,
+  icon,
+  ...props
+}: IconButtonProps) => {
   return (
-    <button className={button({ size, variant })} {...props}>
-      {children}
+    <button className={iconButton({ size, variant })} {...props}>
+      <Icon name={icon} size="icon.20" style={{ color: "var(--icon-color)" }} />
     </button>
   );
 };

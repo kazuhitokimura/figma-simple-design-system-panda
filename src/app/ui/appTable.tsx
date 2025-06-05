@@ -20,10 +20,6 @@ const TableCell = ({
       borderColor: "border.default", // panda token
       textStyle: "body.base", // style_DQ6DZ0
       color: "text.default", // panda token
-      fontWeight: 400,
-      fontFamily: "Inter, sans-serif",
-      fontSize: "16px",
-      lineHeight: "1em",
       textAlign: "left",
     })}
   >
@@ -120,10 +116,6 @@ export const AppTable = () => {
                 borderColor: "border.default", // panda token
                 textStyle: "body.base", // style_DQ6DZ0
                 color: "text.default", // panda token
-                fontWeight: 400,
-                fontFamily: "Inter, sans-serif",
-                fontSize: "16px",
-                lineHeight: "1em",
                 textAlign: "left",
               })}
             >
